@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+:root {
+    --gray1: hsl(0, 0%, 17%);
+    --gray2: hsl(0, 0%, 58%);
+    --white: #fff;
+    --black: #000;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}

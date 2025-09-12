@@ -1,0 +1,22 @@
+.attribution {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: var(--white);
+    color: var(--black);
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 8px;
+    border-radius: 10px;
+    opacity: 0.7;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 880px) {
+    .attribution {
+        display: none;
+    }
+}
