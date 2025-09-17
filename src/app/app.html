@@ -1,18 +1,6 @@
 <router-outlet />
-<app-header></app-header>
+<app-header [ipData]="ipData()" (searchIpEvent)="fetchIpInfo($event)"></app-header>
 <section class="mapSection">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9248.578569544572!2d-38.386020117381385!3d-12.936728690524156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71617406c5e77d3%3A0x4ec6a2c9c19397b1!2sSENAI%20CIMATEC!5e0!3m2!1spt-BR!2sbr!4v1757700076247!5m2!1spt-BR!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="map"></div>
 </section>
 <app-my-component></app-my-component>
-
-
-<!-- 
-    To get the IP Address locations, you'll be using the
-    [IP Geolocation API by IPify](https://geo.ipify.org/).
-    To generate the map, we recommend using [LeafletJS](https://leafletjs.com/).
- -->
-
- <!-- https://geo.ipify.org/api/v2/country,city,vpn?apiKey=&ipAddress=8.8.8.8 -->
