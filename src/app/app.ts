@@ -76,6 +76,9 @@ export class App implements OnInit, AfterViewInit {
       error: (err) => {
         this.error.set('Erro ao buscar os dados do IP.');
         console.error('Erro na requisição:', err);
+        this.ipData.set(null);
+        this.clearMap(); // ⬅️ Limpa o mapa em caso de erro
+        alert('Erro ao buscar os dados do IP. Por favor, tente novamente.');
       },
     });
   }
